@@ -14,8 +14,11 @@ netsh interface tcp set global autotuning = disabled
 
 #RegEdit
 
+[HKEY_LOCAL_MACHINE / SYSTEM / CurrentControlSet / Services / Tcpip / Parameters]
 
+EnablePMTUBHDiscovery  =  1
 
+GlobalMaxTcpWindowSize = 64240
 
 #Other
 

@@ -87,3 +87,6 @@ Disable-NetAdapterLso -Name *
 #Other
 
 DNS 1.1.1.1 / 1.0.0.1
+
+
+If you have a other solution, give me your solution thx

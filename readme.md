@@ -18,3 +18,5 @@ netsh interface tcp set global autotuning = disabled
 
 
 #Other
+
+DNS 1.1.1.1

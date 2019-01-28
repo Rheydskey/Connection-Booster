@@ -90,6 +90,10 @@ Clock Rate = dword:00002710
 
 Disable-NetAdapterLso -Name *
 
+#gpedit.msc
+
+Local Computer Policy -> Computer Configuration -> Administrative Template -> Network -> Qos Packet Scheduler -> Limit Reservable bandwidth -> Enabled -> Bandwidth limit (%): 0
+
 #Other
 
 DNS 1.1.1.1 / 1.0.0.1

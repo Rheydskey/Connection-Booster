@@ -24,6 +24,11 @@ netsh int ipv4 set dynamicportrange protocol=tcp start=1025 num=64511
 
 #RegEdit
 
+[HKEY LOCAL MACHINE / SYSTEM / CurrentControlSet / Services / Tcpip]
+
+EnablePMTUBHDiscovery = 1 : Dword
+
+GlobalMaxTcpWindowSize = 64240 : Dword
 [HKEY_LOCAL_MACHINE / SYSTEM / CurrentControlSet / Services / Tcpip / Parameters]
 
 EnableDCA = 1

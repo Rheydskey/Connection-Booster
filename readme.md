@@ -92,6 +92,10 @@ Scheduling Category = High : REG_SZ
 
 SFIO Priority = High : REG_SZ
 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+
+LargeSystemCache = 0 : Dword
+
 #PowerShell
 
 Disable-NetAdapterLso -Name *

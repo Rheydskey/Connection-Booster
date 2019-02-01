@@ -32,59 +32,65 @@ GlobalMaxTcpWindowSize = 64240 : Dword
 
 [HKEY_LOCAL_MACHINE / SYSTEM / CurrentControlSet / Services / Tcpip / Parameters]
 
-EnableDCA = 1
+EnableDCA = 1 : Dword
 
-DefaultTTL = 64
+DefaultTTL = 64 : Dword
 
-MaxUserPort = 65534
+MaxUserPort = 65534 : Dword
 
-EnablePMTUBHDiscovery  =  1
+EnablePMTUBHDiscovery  =  1 : Dword
 
-GlobalMaxTcpWindowSize = 64240
+GlobalMaxTcpWindowSize = 64240 : Dword
 
-Tcp1323Opts = 1
+Tcp1323Opts = 1 : Dword
 
-EnableTCPA = 1
+EnableTCPA = 1 : Dword
 
-TCPMaxDataRetransmissions = 7
+TCPMaxDataRetransmissions = 7 : Dword
 
-SynAttackProtect = 1
+SynAttackProtect = 1 : Dword
 
-MaxUserPort=65535
-
-TcpTimedWaitDelay=30
+TcpTimedWaitDelay = 30 : Dword
 
 [HKEY_LOCAL_MACHINE \ SYSTEM \ CurrentControlSet \ Services \ Tcpip \ Paramètres \ Interfaces ]
 
-TCPNoDelay=1
+TCPNoDelay = 1 : Dword
 
-TcpAckFrequency = 1
+TcpAckFrequency = 1 : Dword
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
 
-IRPStackSize = 50
+IRPStackSize = 50 : Dword
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\ServiceProvider]
 
-LocalPriority=4 
+LocalPriority = 4 : DWORD
 
-HostsPriority=5
+HostsPriority=5 : DWORD
 
-DnsPriority=6
+DnsPriority=6 : DWORD
 
-NetbtPriority=7
+NetbtPriority=7 : DWORD
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSMQ\Parameters]
 
-TCPNoDelay = 1
+TCPNoDelay = 1 : DDWORD
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games]
+[[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games] # For Gaming Performances
 
-Affinity = dword:00000000
+Affinity = 0 : Dword
 
-Background Only = False
+Background Only = False : REG_SZ
 
-Clock Rate = dword:00002710
+Clock Rate = 2710 : Dword
+
+GPU Priority = 8 : Dword
+
+Priority = 2 : Dword
+
+Scheduling Category = High : REG_SZ
+
+SFIO Priority = High : REG_SZ
 
 #PowerShell
 

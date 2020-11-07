@@ -1,4 +1,4 @@
-####All Feature SoftWare
+#### Je ne suis en aucun cas responsable des problèmes causés par ses paramètres / I am in no way responsible for problems caused by its parameters.
 
 #Command CMD
 
